@@ -1,6 +1,6 @@
-# REACTDOJO
+# Food Recipe App
 
-### This repository is a training ground for learning React fundamentals
+### A user-friendly platform designed to help users discover and explore a wide variety of recipes. It provides a seamless search experience, allowing users to quickly find recipes based on specific ingredients or dietary preferences.
 
 # What I learned:
 
@@ -8,14 +8,17 @@
   npm create vite@4.1.0
 - React components folder structure (src/components/, src/css/)
 - The use of array methods i.e. map(), filter(), slice()
+- The use of ternary; conditional rendering of elements in JSX
 - React context for passing properties of one component to another
 - Postman tool for API calls
 - Spoonacular Food and Recipe API: https://spoonacular.com/food-api/console#Profile
 - How to load environment variables in .env file using import.meta.env.VITE_VARIABLENAME
+- React memos
 
 # HOW TO INSTALL
 
-1. Explain how to install this repo
+1. git clone the repo to your local
+2. execute command in terminal: npm run build
 
 ## Demo Site:
 
