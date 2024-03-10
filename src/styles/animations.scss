@@ -1,0 +1,32 @@
+.typing-container {
+    font-family: Arial;
+    font-size: 18px;
+  }
+  
+  .typed-text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 0;
+    animation: typing 2s linear forwards;
+    margin-bottom: 10px; // Adjust spacing between paragraphs
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  // Delay each paragraph for a typing effect
+  $timestep: 0.5s; // Adjust timing between paragraphs
+  
+  @for $i from 1 through 5 {
+    .typed-text:nth-child(#{$i}) {
+      animation-delay: $i * $timestep;
+    }
+  }
+  

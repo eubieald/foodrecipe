@@ -1,0 +1,92 @@
+.recipeDetails_container {
+  width: 100%;
+  max-width: 150px;
+  overflow-wrap: anywhere;
+  display: block;
+  border: 1px solid $item-border-color;
+  padding: 0;
+  text-align: center;
+  box-shadow: 13px 13px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  height: 100%;
+  margin-left: 10px;
+
+  h2,
+  h3 {
+    font-size: 16px;
+    margin: 20px 0;
+    text-transform: capitalize;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .content {
+    padding: 0 10px 10px;
+  }
+}
+
+.container_label {
+  padding: 10px;
+  font-weight: $font-weight-bold;
+  color: $primary-color;
+  text-transform: capitalize;
+}
+
+.categorized_details {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  span:not(:last-child) {
+    padding-right: 10px;
+  }
+}
+
+.instructions {
+  word-wrap: break-word;
+
+  > div {
+    color: $text-color;
+  }
+
+  ol {
+    padding-left: 20px;
+  }
+}
+
+.diets {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 480px) {
+  .recipeDetails_container {
+    max-width: 200px;
+    width: 100%;
+    margin: 0 0 0 20px;
+    height: 100%;
+  }
+}
+
+@media (min-width: 640px) {
+  .recipeDetails_container {
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 768px) {
+  .recipeDetails_container {
+    max-width: 250px;
+    width: 100%;
+    margin: 0 10px;
+    padding: 20px;
+  }
+
+  .container_label {
+    padding: 0;
+  }
+}

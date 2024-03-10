@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  box-shadow: 13px 13px 30px rgba(0, 0, 0, 0.15);
+
+  &:hover {
+    cursor: pointer;
+    background-color: $primary-color;
+    color: #ffffff;
+  }
+}

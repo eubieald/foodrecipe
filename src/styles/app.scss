@@ -1,0 +1,10 @@
+// import fonts scss
+@import "./fonts";
+@import "./animations";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: $dt-font-size;
+  font-family: "Poppins", sans-serif;
+}

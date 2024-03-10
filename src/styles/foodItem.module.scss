@@ -1,0 +1,60 @@
+.grid_item {
+  padding: 10px;
+  border: 1px solid $item-border-color;
+  text-align: center;
+  box-shadow: 13px 13px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+
+.grid_item_img {
+  padding: 0;
+  margin: 0;
+
+  > img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+}
+
+.grid_item_title {
+  padding: 10px 0;
+  font-size: 12px;
+  display: block;
+  width: 100%;
+  font-weight: $font-weight-bold;
+  color: $primary-color;
+  text-transform: capitalize;
+}
+
+.viewRecipe {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: $primary-color;
+  color: #ffffff;
+  border: none;
+  box-shadow: 13px 13px 30px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+
+  &:hover {
+    background-color: #000;
+    color: $secondary-color;
+  }
+}
+
+.active {
+  background-color: $secondary-color;
+}
+
+@media (min-width: 481px) {
+  .grid_item_title {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .grid_item {
+    padding: 15px;
+  }
+}

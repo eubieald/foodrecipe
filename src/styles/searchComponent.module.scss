@@ -1,0 +1,24 @@
+.form {
+  display: flex;
+  max-width: 500px;
+  margin: 20px;
+
+  > input {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff0100;
+    color: #ffffff;
+    font-size: $dt-font-size;
+    border: none;
+    border: 1px solid #ff0100;
+    border-radius: 20px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #ffffff;
+    }
+  }
+}

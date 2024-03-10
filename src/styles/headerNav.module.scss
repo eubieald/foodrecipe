@@ -1,0 +1,47 @@
+.header {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Ensure the image stays within the header */
+  height: 300px;
+
+  blockquote {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    padding-top: 100px;
+
+    div {
+      font-weight: $font-weight-bold;
+      color: #ffffff;
+      margin: 0;
+      font-size: 24px;
+      padding-left: 20px;
+    }
+  }
+
+  > img {
+    z-index: -2;
+    object-fit: cover;
+  }
+}
+
+.header_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.header_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: -1;
+}
