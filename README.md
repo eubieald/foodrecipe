@@ -20,7 +20,7 @@
 1. git clone the repo to your local
 2. execute command in terminal: npm run build
 
-## Demo Site:
+## Demo Site: https://eubieald-foodrecipe.netlify.app/
 
 ## Screenshots:
 
