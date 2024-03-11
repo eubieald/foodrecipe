@@ -1,6 +1,6 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import { resolve } from "path";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { resolve } from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -14,15 +14,15 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@": resolve(__dirname, "src"), // Alias @ to src/ for imports
+      '@': resolve(__dirname, 'src'), // Alias @ to src/ for imports
     },
   },
   optimizeDeps: {
-    include: ["@babel/preset-env", "react", "react-dom"],
+    include: ['@babel/preset-env', 'react', 'react-dom'],
   },
   assets: {
     // Specify directories containing images and videos
     // Vite will handle files in these directories
-    include: ["src/assets/**"],
+    include: ['src/assets/**'],
   },
 });

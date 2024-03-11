@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import styles from "../styles/foodItem.module.scss";
-import LazyLoad from "react-lazyload";
 
 const FoodItem = ({ foodItem, setActiveFoodId }) => {
   const handleClick = (id) => {
@@ -41,9 +40,9 @@ const FoodItem = ({ foodItem, setActiveFoodId }) => {
 
   return (
     <li className={styles.grid_item} id={foodItem.id}>
-      <LazyLoad className={styles.grid_item_img}>
+      <div className={styles.grid_item_img}>
         <img src={foodItem.image} alt={foodItem.title} />
-      </LazyLoad>
+      </div>
       <div className={styles.grid_item_title}>{foodItem.title}</div>
       <button
         className={styles.viewRecipe}
