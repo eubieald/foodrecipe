@@ -5,6 +5,7 @@ import SearchComponent from "./SearchComponent";
 import FoodList from "./FoodList";
 import RecipeDetails from "./RecipeDetails";
 import HeaderNav from "./HeaderNav";
+import Footer from "./Footer";
 
 // Styles import
 import styles from "../styles/app.scss";
@@ -42,6 +43,7 @@ const FoodApp = () => {
             <FoodList setActiveFoodId={setActiveFoodId} />
             <RecipeDetails activeFoodId={activeFoodId} />
           </FoodListRecipe>
+          <Footer />
         </>
       </CountContext.Provider>
     </FoodsStateContext.Provider>
