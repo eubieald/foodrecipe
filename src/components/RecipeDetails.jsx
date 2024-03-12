@@ -22,21 +22,21 @@ const RecipeDetails = ({ activeFoodId }) => {
       try {
         if (activeFoodId) {
           // Using spoonacular api
-          const response = await authenticateApiCall(
-            "",
-            `${
-              import.meta.env.VITE_SPOONACULAR_API_RECIPE_INFORMATION
-            }${activeFoodId}/information`
-          );
-          const data = await response.json();
-          setActiveFood(data);
+          // const response = await authenticateApiCall(
+          //   "",
+          //   `${
+          //     import.meta.env.VITE_SPOONACULAR_API_RECIPE_INFORMATION
+          //   }${activeFoodId}/information`
+          // );
+          // const data = await response.json();
+          // setActiveFood(data);
 
           // Offline mode if API is not available
-          // const { default: response } = await import(
-          //   "../data/offlineFoodItemData.json"
-          // );
-          // const food = response.find((item) => item.id === activeFoodId);
-          // setActiveFood(food || null);
+          const { default: response } = await import(
+            "../data/offlineFoodItemData.json"
+          );
+          const food = response.find((item) => item.id === activeFoodId);
+          setActiveFood(food || null);
         } else {
           setActiveFood(null);
         }

@@ -22,7 +22,7 @@ const HeaderNav = () => {
         console.error("Error fetching trivia:", error);
       }
     }
-    fetchTrivia(); // Call the fetchTrivia function
+    // fetchTrivia(); // Call the fetchTrivia function
   }, []); // Empty dependency array to only fetch data once when the component mounts
 
   return (

@@ -34,18 +34,18 @@ const SearchComponent = () => {
           return;
         }
         // Using spooinacular api
-        const response = await authenticateApiCall(`query=${searchTerm}`);
-        const data = await response.json();
-        let results = data.results;
+        // const response = await authenticateApiCall(`query=${searchTerm}`);
+        // const data = await response.json();
+        // let results = data.results;
 
         // For offline mode if API is not available
-        // const { default: data } = await import(
-        //   "../data/offlineFoodListData.json"
-        // );
-        // let results = data.results;
-        // results = results.filter((item) =>
-        //   item.title.toLowerCase().includes(searchTerm)
-        // );
+        const { default: data } = await import(
+          "../data/offlineFoodListData.json"
+        );
+        let results = data.results;
+        results = results.filter((item) =>
+          item.title.toLowerCase().includes(searchTerm)
+        );
 
         setOriginalCount(results.length);
         setVisibleFoods(results.slice(0, loadedCount)); // Initially load 4 items
